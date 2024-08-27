@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms project</title>
+</head>
+<body>
+    <form action=./submit.html method="post"></forms> 
+        <fieldset>
+            <legend>user login</legend>
+        <label for="username">Name:</label>
+        <input type="text" id="username" value="Prasanna83" readonly placeholder="username" name="username" pattern="[A-Z][a-z]+[0-9]*"required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="passsword" name="password" min="10"max="16" pattern="[A-Z][a-z]+[@#$][0-9]*"required><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>personal details</legend>
+    <label for="email">Email:</label>
+    <input type="email"id="email"placeholder="enter your email" name="email"required><br><br>
+    <label for="phone">Phone no:</label>
+    <input type="tel"id="phone" name="phone"placeholder="enter your number"required><br><br>
+    <label for="place">Place:</label>
+    <input type="text"id="place" name="place" placeholder="enter your place"required><br><br>
+    <label>Gender</label><br>
+    <input type="radio" name="gender"value="male"><span>Male</span><br>
+    <input type="radio" name="gender" value="female"><span>Female</span><br>
+    <input type="radio" name="gender" value="transgender"><span>Others</span><br><br>
+    <label for="age">AGE:</label>
+    <input type="number"id="age" min="18" max="80" required><br><br>
+    <label>Date of birth</label>
+    <input type="date">
+    <select name=" Qualification"required>
+        <option>Qualification</option>
+        <option>10th</option>
+        <option>inter</option>
+        <option>Degree</option>
+    </select><br><br>
+    <label>select state</label>
+    <select name="state"required>
+        <option>select state</option>
+        <option>Andhra pradesh</option>
+        <option>telangana</option>
+        <option>sri lanka</option>
+    </select><br><br>
+    <label>select country</label>
+    <input list="countries" name="country" required><br><br>
+        <datalist id="countries">
+            <option>INDIA</option>
+            <option>PAKISTAN</option>
+            <option>SRILANKA</option>
+        </datalist>
+    </select>
+    <label>ADDRESS</label><br>
+    <textarea rols="50" cols="50"></textarea><br>
+        <input type="submit" value="Register"><input type="reset">
+    </form>
+</body>
+</html>
